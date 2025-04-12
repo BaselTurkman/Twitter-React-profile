@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import Trend from "../Trends/Trends";
 import { trends } from "../../constants/trends";
-import ShowMore from "../ShowMoreLink/ShowMoreLink";
+import ShowMoreLink from "../ShowMoreLink/ShowMoreLink";
 export default function TrendsSection() {
   return (
     <Box
@@ -27,7 +27,7 @@ export default function TrendsSection() {
             isArabic={trend.isArabic}
           />
         ))}
-        <ShowMore />
+        <ShowMoreLink />
       </Stack>
     </Box>
   );
