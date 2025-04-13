@@ -14,10 +14,10 @@ function App() {
       <CssBaseline />
       <Box sx={{ minHeight: '100vh' }} position="relative">
           <Grid container>
-            <Grid size={{xs: 4, md: 3}} position="sticky" top= {0} height={100} zIndex={1}>
+            <Grid size={{xs: 4, md: 2}} position="sticky" top= {0} height={100} zIndex={1}>
               <Sidebar />
             </Grid>
-            <Grid size={{xs: 2, md: 6}} sx={{border: "black solid 1px", borderRadius: 4}}>
+            <Grid size={{xs: 2, md: 7}} sx={{border: "black solid 1px", borderRadius: 4}}>
               <Feed />
             </Grid>
             <Grid size={{xs: 6, md: 3}} zIndex={1}>

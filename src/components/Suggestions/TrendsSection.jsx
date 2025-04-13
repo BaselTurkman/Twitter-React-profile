@@ -1,23 +1,12 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 import Trend from "../Trends/Trends";
 import { trends } from "../../constants/trends";
-import ShowMoreLink from "../ShowMoreLink/ShowMoreLink";
+import BoxContainer from "./BoxContainer/BoxContainer";
+
 export default function TrendsSection() {
   return (
-    <Box
-      borderRadius={3}
-      px={3}
-      py={2}
-      mt={3}
-      sx={{
-        backgroundColor: "#2b2929",
-      }}
-    >
-      <Typography variant="h6" fontWeight="bold">
-        Trends for you
-      </Typography>
-
-      <Stack flexDirection="column" mt={2} gap={2}>
+    <BoxContainer title="Trends for you">
+      <Stack flexDirection="column" mt={2} gap={2} p={2}>
         {trends.map((trend) => (
           <Trend
             key={trend.name}
@@ -27,8 +16,7 @@ export default function TrendsSection() {
             isArabic={trend.isArabic}
           />
         ))}
-        <ShowMoreLink />
       </Stack>
-    </Box>
+    </BoxContainer>
   );
 }
