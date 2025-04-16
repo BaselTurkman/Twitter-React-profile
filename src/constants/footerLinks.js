@@ -1,0 +1,1 @@
+export const footerLinks = ["Terms of Service", "Privacy Policy", "Cookie Policy", "Accessibility", "Ads info", "More...", "© 2024 X Corp."]
